@@ -15,7 +15,7 @@ func main() {
 	work := flag.Int("w", 25, "Work duration in minutes")
 	short := flag.Int("s", 5, "Short break duration in minutes")
 	long := flag.Int("l", 15, "Long break duration in minutes")
-	cycles := flag.Int("c", 4, "Work sessions before long break")
+	cycles := flag.Int("c", 3, "Work sessions before long break")
 	flag.Parse()
 
 	p := timer.New(*work, *short, *long, *cycles)
